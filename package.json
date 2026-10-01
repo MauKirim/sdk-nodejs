@@ -1,0 +1,58 @@
+{
+  "name": "maukirim",
+  "version": "1.0.0",
+  "description": "Official Node.js and TypeScript SDK for the MauKirim WhatsApp gateway (maukirim.com) — send OTP codes, send templated notifications, and operate rented WhatsApp numbers.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "maukirim",
+    "whatsapp",
+    "whatsapp-api",
+    "otp",
+    "notification",
+    "send-otp",
+    "sdk",
+    "api-client",
+    "typescript"
+  ],
+  "author": "MauKirim <dev@maukirim.com> (https://maukirim.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauKirim/sdk-nodejs.git"
+  },
+  "homepage": "https://maukirim.com",
+  "bugs": {
+    "url": "https://github.com/MauKirim/sdk-nodejs/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
