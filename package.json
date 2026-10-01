@@ -1,6 +1,6 @@
 {
   "name": "maukirim",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Node.js and TypeScript SDK for the MauKirim WhatsApp gateway (maukirim.com) — send OTP codes, send templated notifications, and operate rented WhatsApp numbers.",
   "license": "MIT",
   "type": "module",
@@ -40,7 +40,7 @@
     "api-client",
     "typescript"
   ],
-  "author": "MauKirim <dev@maukirim.com> (https://maukirim.com)",
+  "author": "MauKirim <hello@maukirim.com> (https://maukirim.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MauKirim/sdk-nodejs.git"
